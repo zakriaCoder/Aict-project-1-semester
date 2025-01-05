@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Hangout-Glasgow</title>
+    <link rel="icon" href="file:///C:/Users/USER/Desktop/VS%20code%20HTML/Aict%20Lab%20Project/images/Hangout.jpg"
+        type="image/x-icon">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mystyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Heebo" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <script src="myfunction.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body onload="DayDateTime(); myFunction()">
+
+    <header style="color: aquamarine;">
+
+
+        <div class="heading">
+            <a href="index.html"><img
+                    src="file:///C:/Users/USER/Desktop/VS%20code%20HTML/Aict%20Lab%20Project/images/Hangout.jpg"
+                    height="100px" width="120px" alt="people make glasgow logo"> </a>
+
+
+
+            <div class="wrapper" style="font-size: x-small;">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <em target="_blank" class="fa fa-5x fa-facebook-square "
+                    onclick="window.location.href='https://www.facebook.com';"></em>
+                <em target="_blank" class="fa fa-5x fa-twitter-square "
+                    onclick="window.location.href='https://www.twitter.com';"></em>
+                <em target="_blank" class="fa fa-5x fa-instagram"
+                    onclick="window.location.href='https://www.instagram.com';"></em>
+                <em target="_blank" class="fa fa-5x fa-snapchat-square"
+                    onclick="window.location.href='https://www.snapchat.com';"></em>
+
+
+            </div>
+
+
+        </div>
+
+        <div class="datetime" id="datetime" style="text-align: right;"></div>
+
+        <script style="border-color: palevioletred; color: pink;">
+            function DayDateTime() {
+
+                const now = new Date();
+                const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: true };
+                return now.toLocaleString('en-US', options);
+            }
+            const dateTimeElement = document.getElementById('datetime');
+            dateTimeElement.innerHTML = `<span class="datetime-border">${DayDateTime()}</span>`;
+
+
+        </script>
+
+
+    </header>
+
+
+
+
+    <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="whatson.html">WHAT'S ON</a></li>
+            <li><a href="topattractions.html">TOP ATTRACTIONS</a></li>
+            <li><a href="entertainment.html">ENTERTAINMENT</a></li>
+            <li><a href="foodanddrink.html">FOOD &amp; DRINK</a></li>
+            <li><a href="contactus.html">CONTACT US</a></li>
+
+
+        </ul>
+    </nav>
+
+    <div class="enterhead">
+
+
+        <h2> FOOD &amp; DRINK </h2>
+
+    </div>
+
+    <div class="enter">
+
+        <p> Glasgow’s eating and drinking scene is vibrant, with food and drink available to suit all tastes and
+            pockets. Popular travel magazine, Wanderlust, recently highlighted the city’s <i>“impressive gastronomic
+                scene”.</i> These days it’s firmly part of the city’s unique culture: coffee and cake while shopping,
+            lunch in or nearby a museum, drinks before a gig, dinner in one of our exciting, diverse neighbourhoods and
+            districts. </p>
+
+        <p>The city’s food and drink is about experience and authenticity: keeping it real, serving it well. In Glasgow,
+            that’s delivered by our greatest asset – our people. We want to help you uncover the distinctive food and
+            drink experiences which will enhance your stay. After all, whether you're here for shopping, a concert, a
+            conference, visiting family or an event, everyone has to eat.</p> <br>
+
+    </div>
+
+
+    <ul>
+        <li class="imageContainer">
+            <a
+                href="https://theculturetrip.com/europe/united-kingdom/scotland/articles/the-10-best-scottish-restaurants-in-glasgow/">
+                <img src="file:///C:/Users/USER/Desktop/VS%20code%20HTML/Aict%20Lab%20Project/images/scottish%20food.jpg"
+                    alt="Scottish food" class="priceimage"></a>
+            <a class="overlayText">
+                SCOTTISH CUISINE
+            </a>
+        </li>
+
+        <li class="imageContainer"
+            onclick="window.open('https://www.visitglasgow.com/neighbourhoods/city-centre/merchant-city', '_blank')">
+            <a href="https://www.tripadvisor.co.uk/Restaurants-g186534-zfn13756-Glasgow_Scotland.html"><img
+                    src="file:///C:/Users/USER/Desktop/VS%20code%20HTML/Aict%20Lab%20Project/images/Mercahant%20city.jpg"
+                    alt="merchant street" class="priceimage"></a>
+            <a class="overlayText">
+                MERCHANT CITY
+            </a>
+        </li>
+
+
+        <li class="imageContainer">
+            <a href="https://www.tripadvisor.co.uk/Restaurants-g186534-c26-Glasgow_Scotland.html"><img
+                    src="file:///C:/Users/USER/Desktop/VS%20code%20HTML/Aict%20Lab%20Project/images/Italian%20Food.jpg"
+                    alt="Italian Food" class="priceimage"></a>
+            <a class="overlayText">
+                ITALIAN CUISINE
+            </a>
+        </li>
+
+        <li class="imageContainer"
+            onclick="window.open('https://www.tripadvisor.com/Attraction_Review-g186534-d190127-Reviews-Sauchiehall_Street-Glasgow_Scotland.html', '_blank')">
+            <a href="https://www.designmynight.com/glasgow/bars/bars-in-sauchiehall-street"><img
+                    src="file:///C:/Users/USER/Desktop/VS%20code%20HTML/Aict%20Lab%20Project/images/Sauchiehall%20Street.jpg"
+                    alt="sauchiehall street" class="priceimage"></a>
+            <a class="overlayText">
+                SAUCHIEHALL STREET
+            </a>
+        </li>
+
+        <li class="imageContainer">
+            <a href="https://www.tripadvisor.co.uk/Restaurants-g186534-c3-Glasgow_Scotland.html"><img
+                    src="file:///C:/Users/USER/Desktop/VS%20code%20HTML/Aict%20Lab%20Project/images/king%20tuts.jpeg"
+                    alt="King Tuts " class="priceimage"></a>
+            <a class="overlayText">
+                ASIAN CUISINE
+            </a>
+        </li>
+
+
+        <li class="imageContainer"
+            onclick="window.open('https://www.visitglasgow.com/neighbourhoods/west-end', '_blank')">
+            <a href="https://www.designmynight.com/glasgow/bars/bars-in-west-end-glasgow"><img
+                    src="file:///C:/Users/USER/Desktop/VS%20code%20HTML/Aict%20Lab%20Project/images/Ashton%20Lane.jpeg"
+                    alt="West End Glasgow" class="priceimage"></a>
+            <a class="overlayText">
+                GLASGOWS WEST END
+            </a>
+        </li>
+
+    </ul>
+
+    <footer>
+
+        <div class="col5">
+
+            <form action="index.html" method="post" style="color: maroon;">
+                SIGN UP FOR OUR WEEKLY NEWSLETTER! <br><br>
+                <input type="text" name="sign up" placeholder="email@example.co.uk">
+                <input type="button" onclick="alert('Thank you for signing up!')" value="Submit">
+            </form><br>
+
+        </div>
+        <br><br>
+        <div class="smart">
+
+            <form name="myform">
+                <select name="mySelect" onchange="goThere()">
+
+                </select>
+
+
+            </form>
+
+        </div>
+
+        <br><br>
+        <div class="copy">
+
+            <p><b>&copy; Hangout 2025. All rights reserved</b> </p>
+        </div>
+        <br>
+    </footer>
+</body>
+
+</html>

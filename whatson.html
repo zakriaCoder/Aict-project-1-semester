@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+    <title>Hangout-Glasgow</title>
+    <link rel="icon" href="file:///C:/Users/USER/Desktop/VS%20code%20HTML/Aict%20Lab%20Project/images/Hangout.jpg"
+        type="image/x-icon">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mystyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Heebo" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <script src="myfunction.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body onload="DayDateTime(); myFunction()">
+
+    <body onload="DayDateTime(); myFunction()">
+
+        <header style="color: aquamarine;">
+
+
+            <div class="heading">
+                <a href="index.html"><img
+                        src="file:///C:/Users/USER/Desktop/VS%20code%20HTML/Aict%20Lab%20Project/images/Hangout.jpg"
+                        height="100px" width="120px" alt="people make glasgow logo"> </a>
+
+                <div class="wrapper" style="font-size: x-small;">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <em target="_blank" class="fa fa-5x fa-facebook-square "
+                        onclick="window.location.href='https://www.facebook.com';"></em>
+                    <em target="_blank" class="fa fa-5x fa-twitter-square "
+                        onclick="window.location.href='https://www.twitter.com';"></em>
+                    <em target="_blank" class="fa fa-5x fa-instagram"
+                        onclick="window.location.href='https://www.instagram.com';"></em>
+                    <em target="_blank" class="fa fa-5x fa-snapchat-square"
+                        onclick="window.location.href='https://www.snapchat.com';"></em>
+
+
+                </div>
+
+
+            </div>
+
+            <div class="datetime" id="datetime" style="text-align: right;"></div>
+
+            <script style="border-color: palevioletred; color: pink;">
+                function DayDateTime() {
+
+                    const now = new Date();
+                    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: true };
+                    return now.toLocaleString('en-US', options);
+                }
+                const dateTimeElement = document.getElementById('datetime');
+                dateTimeElement.innerHTML = `<span class="datetime-border">${DayDateTime()}</span>`;
+
+
+            </script>
+
+
+        </header>
+
+
+
+
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="whatson.html">WHAT'S ON</a></li>
+                <li><a href="topattractions.html">TOP ATTRACTIONS</a></li>
+                <li><a href="entertainment.html">ENTERTAINMENT</a></li>
+                <li><a href="foodanddrink.html">FOOD &amp; DRINK</a></li>
+                <li><a href="contactus.html">CONTACT US</a></li>
+
+
+            </ul>
+        </nav>
+
+        <div class="enterhead">
+            <h2> WHAT'S ON </h2>
+
+
+        </div>
+
+        <div class="enter">
+            <p>Glasgow has a fantastic year round calanderr of events with something for everyone. From annual festive
+                favourites to world class theatre, dance, music, sport, visual arts, family fun and more - there's
+                something to enjoy every day of the week!</p>
+
+            <br>
+
+
+        </div>
+
+
+
+
+        <ul>
+            <li class="imageContainer">
+                <a href="https://www.glasgowconcerthalls.com/Pages/whats-on.aspx"> <img
+                        src="file:///C:/Users/USER/Desktop/VS%20code%20HTML/Aict%20Lab%20Project/images/concert%20hall.jpg"
+                        alt="royal concert hall listings" class="priceimage"></a>
+                <a class="overlayText">
+                    ROYAL CONCERT HALL
+                </a>
+            </li>
+
+            <li class="imageContainer">
+                <a href="http://www.atgtickets.com/venues/kings-theatre/"><img
+                        src="file:///C:/Users/USER/Desktop/VS%20code%20HTML/Aict%20Lab%20Project/images/kings%20theatre%20listings.png"
+                        alt="Kings Theatre listings" class="priceimage"></a>
+                <a class="overlayText">
+                    KINGS THEATRE
+                </a>
+            </li>
+
+            <li class="imageContainer">
+                <a href="https://beta.glasgowlife.org.uk/museums/venues/kelvingrove-art-gallery-and-museum"><img
+                        src="file:///C:/Users/USER/Desktop/VS%20code%20HTML/Aict%20Lab%20Project/images/kelvingrove%20art%20gallery%20listings.jpg"
+                        alt="kelvingrove art gallery listings" class="priceimage"></a>
+                <a class="overlayText">
+                    KELVINGROVE ART GALLERY
+                </a>
+            </li>
+
+            <li class="imageContainer">
+                <a href="http://www.whatsonglasgow.co.uk/listings/glasgow-green/"> <img
+                        src="file:///C:/Users/USER/Desktop/VS%20code%20HTML/Aict%20Lab%20Project/images/Glasglow%20green.jpg"
+                        alt="Glasgow Green" class="priceimage"></a>
+                <a class="overlayText">
+                    GLASGOW GREEN
+                </a>
+            </li>
+
+            <li class="imageContainer">
+                <a href="https://www.emiratesarena.co.uk/Pages/default.aspx"><img
+                        src="file:///C:/Users/USER/Desktop/VS%20code%20HTML/Aict%20Lab%20Project/images/Emirates%20Arena.gif"
+                        alt="Emirates Arena" class="priceimage"></a>
+                <a class="overlayText">
+                    EMIRATES ARENA
+                </a>
+            </li>
+
+            <li class="imageContainer">
+                <a href="http://www.ticketmaster.co.uk/SEC-Armadillo-tickets-Glasgow/venue/444303"><img
+                        src="file:///C:/Users/USER/Desktop/VS%20code%20HTML/Aict%20Lab%20Project/images/kelvingrove%20art%20gallery%20listings.jpg"
+                        alt="kelvingrove art gallery listings" class="priceimage"></a>
+                <a class="overlayText">
+                    SEC ARMADILLO
+                </a>
+            </li>
+
+        </ul>
+
+        <footer>
+
+            <div class="col5">
+
+                <form action="index.html" method="post" style="color: maroon;">
+                    SIGN UP FOR OUR WEEKLY NEWSLETTER! <br><br>
+                    <input type="text" name="sign up" placeholder="email@example.co.uk">
+                    <input type="button" onclick="alert('Thank you for signing up!')" value="Submit">
+                </form><br>
+
+            </div>
+            <br><br>
+            <div class="smart">
+
+                <form name="myform">
+                    <select name="mySelect" onchange="goThere()">
+
+                    </select>
+
+
+                </form>
+
+            </div>
+
+
+
+            <br><br>
+            <div class="copy">
+
+                <p><b>&copy; Hangout 2025. All rights reserved</b> </p>
+            </div>
+            <br>
+
+        </footer>
+    </body>
+
+</html>
