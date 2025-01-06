@@ -1,4 +1,3 @@
-# AICT-PROJECT-1ST-SEMESTER
 The Glasgow Tour Website is a dynamic and responsive website designed to provide tourists and locals with information about Glasgow's top attractions, cultural events, dining options, and entertainment. The project focuses on creating an engaging and user-friendly platform.
 
 
